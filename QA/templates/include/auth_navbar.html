@@ -1,0 +1,21 @@
+{% load static %}
+
+<nav class="nav header__nav__auth">
+    <h1 class="title header__title">
+        <a href= "{% url "index" %}">Paraloid</a>
+    </h1>
+    <ul class="nav__list list flex">
+        <li class="list__elem elem flex">
+            <a href= "{% url "settings" %}" class="elem__link">Settings</a>
+        </li>
+        <li class="list__elem elem flex">
+            <a href= "{% url "ask" %}" class="elem__link">New question</a>
+        </li>
+        <li class="list__elem elem flex">
+            <a href= "{% url "index" %}" class="elem__link">My questions</a>
+        </li>
+        <li class="list__elem elem flex">
+            <a href= "{% url "hot" %}" class="elem__link">Hot</a>
+        </li>
+    </ul>
+</nav>

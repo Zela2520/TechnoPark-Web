@@ -1,0 +1,30 @@
+{% load static %}
+
+<div class="questions__main-container flex">
+    <h2 class="section-title">New question</h2>
+    <form class="form__ask flex" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype>
+        <div class="form__ask__block flex">
+            <label class="form__login" for="login">Login:</label><input class="indents-reset form__input__ask input-title" id="login" type="text" placeholder="Login">
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__login" for="email">Email:</label><input class="indents-reset form__input__ask input-title" id="email" type="text" placeholder="Email">
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__password" for="nickname">Nickname:</label><input class="indents-reset form__input__ask input-title" id="nickname" type="text" placeholder="Nickname">
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__password" for="password">Password:</label><input class="indents-reset form__input__ask input-title" id="password" type="text" placeholder="Password">
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__password" for="repeatPas">Repeat password:</label><input class="indents-reset form__input__ask input-title" id="repeatPas" type="text" placeholder="Repeat Password">
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__login" for="title">Upload avatar:</label><input class="indents-reset form__input__ask input-img" id="title" type="file" accept="../img/*">
+        </div>
+        <div class="form__submit-container flex">
+            <button class="indents-reset form__btn btn btn-reset" type="submit">
+                Register
+            </button>
+        </div>
+    </form>
+</div>

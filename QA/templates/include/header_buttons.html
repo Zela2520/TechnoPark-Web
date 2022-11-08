@@ -1,0 +1,14 @@
+{% load static %}
+
+<div class="action header__action flex">
+        <input class="header__action__input input" type="text" placeholder="Поиск">
+        <button class="btn-reset btn header__btn">
+            Search
+        </button>
+        <button class="btn-reset btn header__btn">
+            <a href= "{% url "authorization" %}">Login</a>
+        </button>
+        <button class="btn-reset btn header__btn">
+            <a href= "{% url "registration" %}">Sign up</a>
+        </button>
+</div>

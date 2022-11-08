@@ -1,166 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Paraloid</title>
-</head>
-<body>
-    <header class="indents-reset header flex header-offset">
-        <nav class="nav header__nav">
-            <h1 class="title header__title">
-                <a href="index.html">Paraloid</a>
-            </h1>
-            <ul class="nav__list list flex">
-                <li class="list__elem elem flex">
-                    <a href="settings.html" class="elem__link">Settings</a>
-                </li>
-                <li class="list__elem elem flex">
-                    <a href="ask.html" class="elem__link">New question</a>
-                </li>
-                <li class="list__elem elem flex">
-                    <a href="questions.html" class="elem__link">My questions</a>
-                </li>
-                <li class="list__elem elem flex">
-                    <a href="hot.html" class="elem__link">Hot</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="action header__action flex">
-            <input class="header__action__input input" type="text" placeholder="Поиск">
-            <button class="btn-reset btn header__btn">
-                Search
-            </button>
-            <button class="btn-reset btn header__btn">
-                <a href="authorization.html">Login</a>
-            </button>
-            <button class="btn-reset btn header__btn">
-                <a href="registration.html">Sign up</a>
-            </button>
-        </div>
-    </header>
-    <main>
-        <section class="questions container flex section-offset">
-            <div class="questions__main-container flex">
-                <h2 class="section-title">New question</h2>
-                <form class="form__ask flex" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype>
-                    <div class="form__ask__block flex">
-                        <label class="form__login" for="login">Login:</label><input class="indents-reset form__input__ask input-title" id="login" type="text" placeholder="Login">
-                    </div>
-                    <div class="form__ask__block flex">
-                        <label class="form__login" for="email">Email:</label><input class="indents-reset form__input__ask input-title" id="email" type="text" placeholder="Email">
-                    </div>
-                    <div class="form__ask__block flex">
-                        <label class="form__password" for="nickname">Nickname:</label><input class="indents-reset form__input__ask input-title" id="nickname" type="text" placeholder="Nickname">
-                    </div>
-                    <div class="form__ask__block flex">
-                        <label class="form__password" for="password">Password:</label><input class="indents-reset form__input__ask input-title" id="password" type="text" placeholder="Password">
-                    </div>
-                    <div class="form__ask__block flex">
-                        <label class="form__password" for="repeatPas">Repeat password:</label><input class="indents-reset form__input__ask input-title" id="repeatPas" type="text" placeholder="Repeat Password">
-                    </div>
-                    <div class="form__ask__block flex">
-                        <label class="form__login" for="title">Upload avatar:</label><input class="indents-reset form__input__ask input-img" id="title" type="file" accept="../img/*">
-                    </div>
-                    <div class="form__submit-container flex">
-                        <button class="indents-reset form__btn btn btn-reset" type="submit">
-                            Register
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div class="questions__side-bar flex">
-                <h3 class="side-bar__title">Pop tags</h3>
-                <ul class="side-bar__tags flex">
-                    <li class="side-bar__tag-item">
-                        <a href="tag.html"> C++</a>
-                    </li>
-                    <li class="side-bar__tag-item">
-                        <a href="tag.html"> Python</a>
-                    </li>
-                    <li class="side-bar__tag-item">
-                        <a href="tag.html"> SQL</a>
-                    </li>
-                    <li class="side-bar__tag-item">
-                        <a href="tag.html"> JS</a>
-                    </li>
-                    <li class="side-bar__tag-item">
-                        <a href="tag.html"> Go</a>
-                    </li>
-                    <li class="side-bar__tag-item">
-                        <a href="tag.html"> PHP</a>
-                    </li>
-                </ul>
-                <h3 class="side-bar__title">Members</h3>
-                <ul class="side_bar__members members flex">
-                    <li class="member">
-                        Lalipop
-                    </li>
-                    <li class="member">
-                        Alex_zzz
-                    </li>
-                    <li class="member">
-                        Bojander
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <hr class="divider">
-    <footer class="footer container flex">
-        <div class="footer__col flex">
-            <h4 class="footer__col__title">Paraloid</h4>
-            <ul class="footer__list list flex">
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link" href="#">О нас</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link"  href="#">Прессе</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__col flex">
-            <h4 class="footer__col__title">Terms</h4>
-            <ul class="footer__list list flex">
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link" href="#">Условия использования</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link" href="#">Условия конфиденциальности</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__col flex">
-            <h4 class="footer__col__title">Contacts</h4>
-            <ul class="footer__list list flex">
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link" href="#">Помощь</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link" href="#">Команды</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link" href="#">Контакты</a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer__col flex">
-            <h4 class="footer__col__title">Online</h4>
-            <ul class="footer__list list flex">
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link" href="#">ВКонтакте</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link" href="#">Телеграмме</a>
-                </li>
-                <li class="footer__list__item">
-                    <a class="footer__list__item__link link" href="#">Инстаграмм</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-</body>
-</html>
+{% extends "include/base.html" %}
+{% load static %}
+
+{% block navbar %}
+    {% include "include/navbar.html"%}
+{% endblock navbar %}
+
+{% block header_btn %}
+    {% include "include/header_buttons.html"%}
+{% endblock header_btn%}
+
+
+{% block main_content %}
+    {% include "include/registration_form.html" %}
+{% endblock main_content %}
+
+{% block sidebar %}
+    {% include "include/sidebar.html" %}
+{% endblock sidebar %}

@@ -1,0 +1,26 @@
+{% load static %}
+
+<div class="questions__main-container flex">
+    <h2 class="section-title">New question</h2>
+    <form class="form__ask flex" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype>
+        <div class="form__ask__block flex">
+            <label class="form__title" for="login">Login:</label><input class="indents-reset form__input__ask input-title" id="login" type="text" placeholder="Login">
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__title" for="email">Email:</label><input class="indents-reset form__input__ask input-title" id="email" type="text" placeholder="Email">
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__title" for="nickname">Nickname:</label><input class="indents-reset form__input__ask input-title" id="nickname" type="text" placeholder="Nickname">
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__title" for="title">Upload avatar:</label><input class="indents-reset form__input__ask input-img" id="title" type="file" accept="../img/*">
+        </div>
+        <div class="form__submit-container flex">
+            <button class="indents-reset form__btn btn btn-reset" type="submit">
+                Save
+            </button>
+            <input required class="indents-reset form__checkbox" type="checkbox" id="consent" name="consent" value="true">
+            <label class="form__label" for="consent">Confirm changes</label>
+        </div>
+    </form>
+</div>

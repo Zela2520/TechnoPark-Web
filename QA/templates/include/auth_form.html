@@ -1,0 +1,19 @@
+{% load static %}
+
+<div class="questions__main-container flex">
+  <h2 class="section-title">New question</h2>
+  <form class="form__ask flex" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype>
+      <div class="form__ask__block flex">
+          <label class="form__login" for="login">Login:</label><input class="indents-reset form__input__ask input-title" id="login" type="text" placeholder="Login">
+      </div>
+      <div class="form__ask__block flex">
+          <label class="form__password" for="email">Password:</label><input class="indents-reset form__input__ask input-title" id="email" type="text" placeholder="Password">
+      </div>
+      <div class="form__submit-container flex">
+          <button class="indents-reset form__btn btn btn-reset" type="submit">
+              <a href="settings.html">Log in!</a>
+          </button>
+      </div>
+      <a class="reg-link" href="{% url "registration" %}">Create new account</a>
+  </form>
+</div>

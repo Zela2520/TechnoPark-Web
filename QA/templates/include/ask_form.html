@@ -1,0 +1,23 @@
+
+
+<div class="questions__main-container flex">
+    <h2 class="section-title">New question</h2>
+    <form class="form__ask flex" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype>
+        <div class="form__ask__block flex">
+            <label class="form__title" for="title">Title:</label><input class="indents-reset form__input__ask input-title" id="title" type="text" placeholder="Title">
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__text" for="text">Text:</label><textarea class="indents-reset form__input__ask input-textarea" id="text" name="message" placeholder="Your answer"></textarea>
+        </div>
+        <div class="form__ask__block flex">
+            <label class="form__tags" for="tags">Tags:</label><input class="indents-reset form__input__ask input-email" id="tags" type="email" placeholder="Tags name">
+        </div>
+        <div class="form__submit-container flex">
+            <button class="indents-reset form__btn btn btn-reset" type="submit">
+                Create
+            </button>
+            <input required class="indents-reset form__checkbox" type="checkbox" id="consent" name="consent" value="true">
+            <label class="form__label" for="consent">Подтвердить создания вопроса</label>
+        </div>
+    </form>
+</div>

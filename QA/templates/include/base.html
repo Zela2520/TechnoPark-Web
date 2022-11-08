@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <title>Paraloid</title>
+</head>
+<body>
+    <header class="indents-reset header flex header-offset">
+        {% block navbar %}
+        {% endblock navbar %}
+
+        {% block header_btn %}
+        {% endblock header_btn %}
+    </header>
+    <main>
+        <section class="questions container flex section-offset">
+            {% block main_content %}
+            {% endblock main_content %}
+
+            {% block sidebar %}
+            {% endblock sidebar %}
+        </section>
+        {% block add_sections %}
+        {% endblock add_sections %}
+
+        {% block pagination %}
+        {% endblock pagination %}
+    </main>
+    <hr class="divider">
+    <footer class="footer container flex">
+        <div class="footer__col flex">
+            <h4 class="footer__col__title">Paraloid</h4>
+            <ul class="footer__list list flex">
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link" href="#">О нас</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link"  href="#">Прессе</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__col flex">
+            <h4 class="footer__col__title">Terms</h4>
+            <ul class="footer__list list flex">
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link" href="#">Условия использования</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link" href="#">Условия конфиденциальности</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__col flex">
+            <h4 class="footer__col__title">Contacts</h4>
+            <ul class="footer__list list flex">
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link" href="#">Помощь</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link" href="#">Команды</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__col flex">
+            <h4 class="footer__col__title">Online</h4>
+            <ul class="footer__list list flex">
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link" href="#">ВКонтакте</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link" href="#">Телеграмме</a>
+                </li>
+                <li class="footer__list__item">
+                    <a class="footer__list__item__link link" href="#">Инстаграмм</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
